@@ -1,0 +1,63 @@
+.home-header{
+    display:flex ;
+    padding: 20px 120px;
+    justify-content: space-between;
+
+    h2{
+        font-size: 28px;
+    }
+
+    select{
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .basket{
+        cursor: pointer;
+        img{
+            width: 60px
+        };
+        .counter{
+            width: 22px;
+            height: 22px;
+            background-color: #ffc600;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+
+.c-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px 70px;
+    row-gap: 10px;
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            margin-bottom: 8px;
+            width: 250px;
+            height: 250px;
+        }
+        .name-product{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        button ::after:disabled{
+           
+        }
+    }
+}
